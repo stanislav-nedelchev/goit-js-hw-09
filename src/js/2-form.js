@@ -41,6 +41,8 @@ const onFeedbackFormSubmit = event => {
     return alert('Fill please all fields');
   }
 
+  console.log(formData);
+
   event.target.reset();
   localStorage.removeItem('feedback-form-state');
 };
